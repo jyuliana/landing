@@ -1,0 +1,336 @@
+/*
+1-  General Styles
+2-  Form Styling
+3-  Spacing Helping Classes
+4-  parallax
+5-  Header
+6-  Inner Pages
+7-  Blog
+8-  Responsive
+*/
+
+/*=====================
+1-General Styles
+======================*/
+
+.red {color:#ffc000}
+
+body {
+	font-family: 'Clear Sans', sans-serif;
+	overflow: hidden;
+	overflow-y: scroll;
+	font-size:16px;
+	color: #909090;
+    position: relative;
+}
+p { margin: 0 0 10px; }
+
+.lt-ie9 .animated {
+	opacity: 1 !important;
+	-webkit-animation: none !important;
+	animation: none !important;
+	transform: none !important;
+}
+section{ padding: 40px 0; }
+blockquote {
+	border: none;
+	margin: 0;
+	font-size:15px;
+	line-height:28px;
+	padding:40px;
+}
+q{
+	position:relative;
+}
+q::before{
+	position:absolute;
+	left:-25px;
+	top:0;
+	font-size:40px;
+}
+q::after{
+	content:"";
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul{
+	margin:0;
+}
+a { outline: none !important; color:#fff; }
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Intro', sans-serif;
+	margin:10px 0;
+	font-weight:bold;
+}
+h1 { font-size: 50px; }
+h2 { font-size: 41px; }
+h3 { font-size: 26px; }
+h4 { font-size: 28px; }
+h5 { font-size: 24px; }
+h6 { font-size: 16px; }
+
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.btn-default{
+	background:#ffc000;
+	color:#fff;
+}
+.btn{
+	padding:20px 42px;
+	border:none;
+	border-radius:4px;
+	font-weight:bold;
+	text-transform:inherit;
+    font-size: 16px;
+    transition:All 0.5s ease;
+-webkit-transition:All 0.5s ease;
+-moz-transition:All 0.5s ease;
+-o-transition:All 0.5s ease;
+}
+.btn-tranparent{
+	border:1px solid #7cbf1d;
+	border-radius:3px;
+	text-decoration:none !important;
+}
+.btn-head{
+    padding: 12px 25px;
+    font-size: 18px;
+}
+.btn-wide{
+	width:100%;
+	margin:5px auto;
+	padding:15px;
+}
+.btn:hover{
+	text-shadow:1px 1px rgba(0,0,0,0.2);
+	border-color:#000;
+	border-color:rgba(0,0,0,0.2);
+}
+.text-extralight{
+	font-weight:100 !important;
+}
+.text-light{
+	font-weight:300 !important;
+}
+.text-semibold{
+	font-weight:600 !important;
+}
+.text-bold{
+	font-weight:700 !important;
+}
+.text-extrabold{
+	font-weight:800 !important;
+}
+.text-uppercase{
+	text-transform:uppercase !important;	
+}
+.text-lowercase{
+	text-transform:lowercase !important;	
+}
+.link{
+	text-decoration:underline;
+	display:inline-block;
+}
+.link-grey{
+	color:#c5c8c9;
+}
+.link:hover{
+	color:#7cbf1d;	
+}
+.head-grey h2,.head-grey h3{
+    color: #444E5A;
+}
+.color-white{ color: #fff; }
+.no-pad{ padding: 0; }
+/*===============================================
+2-Form Styling
+=================================================*/
+form .btn{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+input[type="text"],input[type="tel"],input[type="email"],input[type="password"],textarea{
+	width:100%;
+    border: none;
+	border:none;
+	color:#828282;
+	background:#fff;
+	border-radius:3px;
+	height:42px;
+	padding:10px 15px;
+	text-transform:inherit;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+input[type="text"].tranparent,input[type="tel"].tranparent,input[type="email"].tranparent,input[type="password"].tranparent,textarea.tranparent{
+	background:none;
+	border:1px solid #7cbf1d;
+	color:#7cbf1d;
+}
+textarea{
+	height:180px;
+	padding:25px 35px;
+}
+label{
+	color:#8e9297;
+    font-size: 14px;
+}
+.field-wrap{
+	margin:15px auto;
+	position:relative;
+}
+.field-wrap label{
+	position:absolute;
+	left:35px;
+	top:12px;
+}
+
+/*====================================
+5-Header
+======================================*/
+.main-menu{
+    position: relative;
+}
+#sticktop{
+    width: 100%;
+}
+.nav-triger{
+    position: absolute;
+    right: 0;
+    top: 70px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+.nav-triger span{
+    font-size: 30px;
+}
+.navbar-custom{
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0 44px;
+    z-index: 999;
+}
+.navbar-custom nav{
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.navbar-custom .container{
+    position: relative;
+}
+.navbar-custom .logo{
+
+}
+.navbar-custom nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+.navbar-custom nav li.active a{
+    color: #fff;
+}
+.navbar-custom nav li:hover a{
+    color: #fff;
+}
+.navbar-custom nav a{
+    color: #fff;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+.navbar-custom nav a:hover{
+    color: #000;
+}
+.main-menu > li > ul{
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 175px;
+    z-index: 999;
+    background: #fff;
+    padding:5px 0 0 0;
+    text-align: left;
+    -moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+    border-top: 5px solid #000;
+    margin-top: 5px;
+}
+
+.main-menu > li > ul > li{
+    display: block;
+    border-bottom: 1px solid #f3f3f3;
+    padding: 3px 0;
+}
+.main-menu > li > ul > li > a{
+    color: #c7c7c7 !important;
+    padding: 5px 15px;
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+}
+.main-menu > li > ul > li > a:hover{
+    color: #000;
+}
+.navbar-custom nav li.active a:after,.navbar-custom nav li:hover a:after{
+    content: '';
+    height: 3px;
+    width: 80%;
+    background: #fff;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+}
+.navbar-custom .logo{
+    font-size: 38px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+.navbar-custom .logo img{
+    transition:All 0.5s ease;
+    -webkit-transition:All 0.5s ease;
+    -moz-transition:All 0.5s ease;
+    -o-transition:All 0.5s ease;
+}
+.eschool .header{
+    background-image: url(../img/header.jpg);
+    background-size: cover;
+    color: #fff;
+    padding:130px 0 60px 0;
+    font-size: 18px;
+}
+.navbar_style{
+    background: #000;
+    z-index: 999;
+    padding: 10px 0 44px;
+}
+.navbar_style a.logo{
+    width: 140px;
+}
+
+
+
+.main-menu {
+	display: flex;
+	justify-content: center;
+	height: 47px;
+}
